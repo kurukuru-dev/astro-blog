@@ -1,0 +1,19 @@
+---
+interface Props {
+  productImgPath: string;
+  productName: string;
+  brandName: string;
+}
+
+const { productImgPath, productName, brandName } = Astro.props;
+---
+
+<li class="rounded-sm border p-1">
+  <article>
+    <a href="/post3">
+      <img src={productImgPath} alt="" class="h-56 w-full" />
+      <h3>商品名: {productName}</h3>
+      <p>ブランド名: {brandName}</p>
+    </a>
+  </article>
+</li>

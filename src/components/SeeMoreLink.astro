@@ -1,0 +1,15 @@
+---
+interface Props {
+  className: string;
+}
+
+const { className } = Astro.props;
+---
+
+<div class={className}>
+  <a
+    href="/new"
+    class="after:ml-1 after:inline-block after:h-3 after:w-3 after:bg-gray-700 after:content-[''] after:[clip-path:polygon(100%_50%,0%_0%,0%_100%)] hover:opacity-50"
+    >もっとみる</a
+  >
+</div>
