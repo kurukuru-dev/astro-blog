@@ -1,0 +1,59 @@
+---
+import Link from "@components/Link.astro";
+import { getCollection } from "astro:content";
+import GlobalLayout from "src/layouts/GlobalLayout.astro";
+
+interface ProductData {
+  data: {
+    id: number;
+    productImgPath: string;
+    productName: string;
+    brandName: string;
+    productDescription: string;
+    releaseDate: string;
+  };
+}
+
+export async function getStaticPaths() {
+  const products: ProductData[] = await getCollection("products");
+
+  const paths = products.map((product: ProductData) => {
+    return {
+      params: {
+        id: product.data.id.toString(),
+      },
+      props: {
+        product,
+      },
+    };
+  });
+
+  return paths;
+}
+
+const { id } = Astro.params;
+const {
+  productImgPath,
+  productName,
+  brandName,
+  productDescription,
+  releaseDate,
+} = Astro.props.product.data;
+
+// time要素のdatetime属性に渡すための日付フォーマット
+const isoDate = releaseDate.replace(/\//g, "-").replace(" ", "T");
+---
+
+<GlobalLayout title="商品ページ">
+  <div class="mt-4 w-full">
+    <img src={productImgPath} alt="商品画像" class="mx-auto h-[500px] w-full" />
+    <div class="mt-4">
+      <h1>商品名: {productName}</h1>
+      <p>商品ID: {id}</p>
+      <h2>ブランド名: {brandName}</h2>
+      <p>商品説明: {productDescription}</p>
+      <time datetime={isoDate} class="block">発売日: {releaseDate}</time>
+      <Link text="トップへ戻る" path="/" className="mt-4 text-right" />
+    </div>
+  </div>
+</GlobalLayout>

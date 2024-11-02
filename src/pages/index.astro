@@ -1,95 +1,55 @@
 ---
-import GlobalLayout from "../layouts/GlobalLayout.astro";
-import Card from "../components/Card.astro";
-import SeeMoreLink from "../components/SeeMoreLink.astro";
+import { getCollection } from "astro:content";
+import { convertToDate } from "src/util";
+import GlobalLayout from "src/layouts/GlobalLayout.astro";
+import Card from "src/components/Card.astro";
+import Link from "src/components/Link.astro";
+
+const products = await getCollection("products");
+
+// 新着商品を日付順に10個取得
+const newProducts = products
+  .sort(
+    (a, b) =>
+      convertToDate(a.data.releaseDate) - convertToDate(b.data.releaseDate)
+  )
+  .slice(0, 10);
+
+// 人気商品5品をランダムに取得
+const popularProducts = products.sort(() => Math.random() - 0.5).slice(0, 5);
 ---
 
-<GlobalLayout title="Hello World">
+<GlobalLayout title="トップページ">
   <div class="mt-2">
     <h2 class="text-xl">新着商品</h2>
     <ul class="mt-1 grid w-full grid-cols-5 grid-rows-2 gap-2">
-      <Card
-        productImgPath="/clothes/clothes-1.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
-      <Card
-        productImgPath="/clothes/clothes-2.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
-      <Card
-        productImgPath="/clothes/clothes-3.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
-      <Card
-        productImgPath="/clothes/clothes-4.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
-      <Card
-        productImgPath="/clothes/clothes-5.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
-      <Card
-        productImgPath="/clothes/clothes-6.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
-      <Card
-        productImgPath="/clothes/clothes-7.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
-      <Card
-        productImgPath="/clothes/clothes-8.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
-      <Card
-        productImgPath="/clothes/clothes-9.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
-      <Card
-        productImgPath="/clothes/clothes-10.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
+      {
+        newProducts.map(({ data }) => (
+          <Card
+            productId={data.id}
+            productImgPath={data.productImgPath}
+            productName={data.productName}
+            brandName={data.brandName}
+          />
+        ))
+      }
     </ul>
-    <SeeMoreLink className="mt-1 text-right" />
+    <Link text="もっとみる" path="/new" className="mt-1 text-right" />
   </div>
   <div class="mt-2">
     <h2 class="text-xl">人気商品ランキング</h2>
     <ul class="mt-1 grid w-full grid-cols-5 grid-rows-1 gap-x-1">
-      <Card
-        productImgPath="/clothes/clothes-1.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
-      <Card
-        productImgPath="/clothes/clothes-2.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
-      <Card
-        productImgPath="/clothes/clothes-3.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
-      <Card
-        productImgPath="/clothes/clothes-4.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
-      <Card
-        productImgPath="/clothes/clothes-5.jpg"
-        productName="商品名1"
-        brandName="ブランド"
-      />
+      {
+        popularProducts.map(({ data }) => (
+          <Card
+            productId={data.id}
+            productImgPath={data.productImgPath}
+            productName={data.productName}
+            brandName={data.brandName}
+          />
+        ))
+      }
     </ul>
-    <SeeMoreLink className="mt-1 text-right" />
+    <Link text="もっとみる" path="/popular" className="mt-1 text-right" />
   </div>
 </GlobalLayout>
