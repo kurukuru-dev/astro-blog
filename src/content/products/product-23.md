@@ -1,4 +1,3 @@
-
 ---
 id: 23
 productImgPath: /clothes/clothes-23.jpg
@@ -7,4 +6,3 @@ brandName: ブランドC
 productDescription: 日常使いにぴったり
 releaseData: 2022/02/09 16:30
 ---
-  

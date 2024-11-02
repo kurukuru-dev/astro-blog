@@ -1,4 +1,3 @@
-
 ---
 id: 28
 productImgPath: /clothes/clothes-28.jpg
@@ -7,4 +6,3 @@ brandName: ブランドC
 productDescription: 肌触りが良い
 releaseData: 2022/02/17 11:30
 ---
-  

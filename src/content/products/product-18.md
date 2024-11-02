@@ -1,4 +1,3 @@
-
 ---
 id: 18
 productImgPath: /clothes/clothes-18.jpg
@@ -7,4 +6,3 @@ brandName: ブランドC
 productDescription: とてもおしゃれです
 releaseData: 2022/03/10 11:25
 ---
-  

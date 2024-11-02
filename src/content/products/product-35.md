@@ -1,4 +1,3 @@
-
 ---
 id: 35
 productImgPath: /clothes/clothes-35.jpg
@@ -7,4 +6,3 @@ brandName: ブランドE
 productDescription: シンプルなデザイン
 releaseData: 2022/03/27 09:35
 ---
-  

@@ -339,9 +339,9 @@ brandName: ${data.brandName}
 productDescription: ${data.productDescription}
 releaseData: ${data.releaseData}
 ---
-  `;
+`;
 
-  return textData;
+  return textData.trim();
 }
 
 const __filename = fileURLToPath(import.meta.url);

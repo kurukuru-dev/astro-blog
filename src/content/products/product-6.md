@@ -1,4 +1,3 @@
-
 ---
 id: 6
 productImgPath: /clothes/clothes-6.jpg
@@ -7,4 +6,3 @@ brandName: ブランドA
 productDescription: 耐久性があり長持ちします
 releaseData: 2022/02/20 15:30
 ---
-  

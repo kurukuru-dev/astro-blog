@@ -1,4 +1,3 @@
-
 ---
 id: 15
 productImgPath: /clothes/clothes-15.jpg
@@ -7,4 +6,3 @@ brandName: ブランドE
 productDescription: 動きやすい設計です
 releaseData: 2022/04/17 13:00
 ---
-  

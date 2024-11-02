@@ -1,4 +1,3 @@
-
 ---
 id: 22
 productImgPath: /clothes/clothes-22.jpg
@@ -7,4 +6,3 @@ brandName: ブランドB
 productDescription: 軽量で快適
 releaseData: 2022/01/23 11:55
 ---
-  

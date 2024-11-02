@@ -1,4 +1,3 @@
-
 ---
 id: 10
 productImgPath: /clothes/clothes-10.jpg
@@ -7,4 +6,3 @@ brandName: ブランドE
 productDescription: 品質が良く快適です
 releaseData: 2022/03/20 12:15
 ---
-  
