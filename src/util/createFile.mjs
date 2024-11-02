@@ -11,7 +11,7 @@ const products = [
     productName: "商品名1",
     brandName: "ブランドA",
     productDescription: "高品質でデザインも良いです",
-    releaseData: "2022/01/15 12:30",
+    releaseDate: "2022/01/15 12:30",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const products = [
     productName: "商品名2",
     brandName: "ブランドB",
     productDescription: "スタイリッシュで快適",
-    releaseData: "2022/02/14 09:45",
+    releaseDate: "2022/02/14 09:45",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const products = [
     productName: "商品名3",
     brandName: "ブランドC",
     productDescription: "素材が非常に柔らかいです",
-    releaseData: "2022/03/23 14:20",
+    releaseDate: "2022/03/23 14:20",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const products = [
     productName: "商品名4",
     brandName: "ブランドD",
     productDescription: "カジュアルで毎日に最適",
-    releaseData: "2022/01/05 18:55",
+    releaseDate: "2022/01/05 18:55",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const products = [
     productName: "商品名5",
     brandName: "ブランドE",
     productDescription: "クールで快適な服です",
-    releaseData: "2022/04/12 11:05",
+    releaseDate: "2022/04/12 11:05",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const products = [
     productName: "商品名6",
     brandName: "ブランドA",
     productDescription: "耐久性があり長持ちします",
-    releaseData: "2022/02/20 15:30",
+    releaseDate: "2022/02/20 15:30",
   },
   {
     id: 7,
@@ -59,7 +59,7 @@ const products = [
     productName: "商品名7",
     brandName: "ブランドB",
     productDescription: "毎日の使用に最適です",
-    releaseData: "2022/03/15 16:00",
+    releaseDate: "2022/03/15 16:00",
   },
   {
     id: 8,
@@ -67,7 +67,7 @@ const products = [
     productName: "商品名8",
     brandName: "ブランドC",
     productDescription: "着心地が素晴らしいです",
-    releaseData: "2022/02/05 13:40",
+    releaseDate: "2022/02/05 13:40",
   },
   {
     id: 9,
@@ -75,7 +75,7 @@ const products = [
     productName: "商品名9",
     brandName: "ブランドD",
     productDescription: "おしゃれなデザインです",
-    releaseData: "2022/01/29 08:30",
+    releaseDate: "2022/01/29 08:30",
   },
   {
     id: 10,
@@ -83,7 +83,7 @@ const products = [
     productName: "商品名10",
     brandName: "ブランドE",
     productDescription: "品質が良く快適です",
-    releaseData: "2022/03/20 12:15",
+    releaseDate: "2022/03/20 12:15",
   },
   {
     id: 11,
@@ -91,7 +91,7 @@ const products = [
     productName: "商品名11",
     brandName: "ブランドA",
     productDescription: "普段着にぴったり",
-    releaseData: "2022/04/03 10:50",
+    releaseDate: "2022/04/03 10:50",
   },
   {
     id: 12,
@@ -99,7 +99,7 @@ const products = [
     productName: "商品名12",
     brandName: "ブランドB",
     productDescription: "素晴らしい着心地です",
-    releaseData: "2022/02/28 17:35",
+    releaseDate: "2022/02/28 17:35",
   },
   {
     id: 13,
@@ -107,7 +107,7 @@ const products = [
     productName: "商品名13",
     brandName: "ブランドC",
     productDescription: "丈夫で長持ちします",
-    releaseData: "2022/01/18 19:20",
+    releaseDate: "2022/01/18 19:20",
   },
   {
     id: 14,
@@ -115,7 +115,7 @@ const products = [
     productName: "商品名14",
     brandName: "ブランドD",
     productDescription: "柔らかく軽い素材です",
-    releaseData: "2022/03/08 16:10",
+    releaseDate: "2022/03/08 16:10",
   },
   {
     id: 15,
@@ -123,7 +123,7 @@ const products = [
     productName: "商品名15",
     brandName: "ブランドE",
     productDescription: "動きやすい設計です",
-    releaseData: "2022/04/17 13:00",
+    releaseDate: "2022/04/17 13:00",
   },
   {
     id: 16,
@@ -131,7 +131,7 @@ const products = [
     productName: "商品名16",
     brandName: "ブランドA",
     productDescription: "ファッション性抜群",
-    releaseData: "2022/02/07 09:15",
+    releaseDate: "2022/02/07 09:15",
   },
   {
     id: 17,
@@ -139,7 +139,7 @@ const products = [
     productName: "商品名17",
     brandName: "ブランドB",
     productDescription: "シンプルで便利",
-    releaseData: "2022/01/30 15:45",
+    releaseDate: "2022/01/30 15:45",
   },
   {
     id: 18,
@@ -147,7 +147,7 @@ const products = [
     productName: "商品名18",
     brandName: "ブランドC",
     productDescription: "とてもおしゃれです",
-    releaseData: "2022/03/10 11:25",
+    releaseDate: "2022/03/10 11:25",
   },
   {
     id: 19,
@@ -155,7 +155,7 @@ const products = [
     productName: "商品名19",
     brandName: "ブランドD",
     productDescription: "軽くて丈夫なデザイン",
-    releaseData: "2022/04/01 18:30",
+    releaseDate: "2022/04/01 18:30",
   },
   {
     id: 20,
@@ -163,7 +163,7 @@ const products = [
     productName: "商品名20",
     brandName: "ブランドE",
     productDescription: "シンプルで高品質",
-    releaseData: "2022/02/22 14:40",
+    releaseDate: "2022/02/22 14:40",
   },
   {
     id: 21,
@@ -171,7 +171,7 @@ const products = [
     productName: "商品名21",
     brandName: "ブランドA",
     productDescription: "普段使いに最適",
-    releaseData: "2022/03/12 09:05",
+    releaseDate: "2022/03/12 09:05",
   },
   {
     id: 22,
@@ -179,7 +179,7 @@ const products = [
     productName: "商品名22",
     brandName: "ブランドB",
     productDescription: "軽量で快適",
-    releaseData: "2022/01/23 11:55",
+    releaseDate: "2022/01/23 11:55",
   },
   {
     id: 23,
@@ -187,7 +187,7 @@ const products = [
     productName: "商品名23",
     brandName: "ブランドC",
     productDescription: "日常使いにぴったり",
-    releaseData: "2022/02/09 16:30",
+    releaseDate: "2022/02/09 16:30",
   },
   {
     id: 24,
@@ -195,7 +195,7 @@ const products = [
     productName: "商品名24",
     brandName: "ブランドD",
     productDescription: "毎日に最適な選択",
-    releaseData: "2022/03/05 13:45",
+    releaseDate: "2022/03/05 13:45",
   },
   {
     id: 25,
@@ -203,7 +203,7 @@ const products = [
     productName: "商品名25",
     brandName: "ブランドE",
     productDescription: "シンプルで魅力的",
-    releaseData: "2022/04/14 10:15",
+    releaseDate: "2022/04/14 10:15",
   },
   {
     id: 26,
@@ -211,7 +211,7 @@ const products = [
     productName: "商品名26",
     brandName: "ブランドA",
     productDescription: "質感が素晴らしい",
-    releaseData: "2022/01/26 18:10",
+    releaseDate: "2022/01/26 18:10",
   },
   {
     id: 27,
@@ -219,7 +219,7 @@ const products = [
     productName: "商品名27",
     brandName: "ブランドB",
     productDescription: "軽くて持ち運びが楽",
-    releaseData: "2022/03/03 14:55",
+    releaseDate: "2022/03/03 14:55",
   },
   {
     id: 28,
@@ -227,7 +227,7 @@ const products = [
     productName: "商品名28",
     brandName: "ブランドC",
     productDescription: "肌触りが良い",
-    releaseData: "2022/02/17 11:30",
+    releaseDate: "2022/02/17 11:30",
   },
   {
     id: 29,
@@ -235,7 +235,7 @@ const products = [
     productName: "商品名29",
     brandName: "ブランドD",
     productDescription: "トレンドに合った服",
-    releaseData: "2022/04/09 13:25",
+    releaseDate: "2022/04/09 13:25",
   },
   {
     id: 30,
@@ -243,7 +243,7 @@ const products = [
     productName: "商品名30",
     brandName: "ブランドE",
     productDescription: "着心地が良い",
-    releaseData: "2022/02/02 08:45",
+    releaseDate: "2022/02/02 08:45",
   },
   {
     id: 31,
@@ -251,7 +251,7 @@ const products = [
     productName: "商品名31",
     brandName: "ブランドA",
     productDescription: "丈夫で長く使える",
-    releaseData: "2022/03/18 17:50",
+    releaseDate: "2022/03/18 17:50",
   },
   {
     id: 32,
@@ -259,7 +259,7 @@ const products = [
     productName: "商品名32",
     brandName: "ブランドB",
     productDescription: "シンプルで便利な服",
-    releaseData: "2022/01/11 19:15",
+    releaseDate: "2022/01/11 19:15",
   },
   {
     id: 33,
@@ -267,7 +267,7 @@ const products = [
     productName: "商品名33",
     brandName: "ブランドC",
     productDescription: "柔らかくて快適",
-    releaseData: "2022/04/05 15:10",
+    releaseDate: "2022/04/05 15:10",
   },
   {
     id: 34,
@@ -275,7 +275,7 @@ const products = [
     productName: "商品名34",
     brandName: "ブランドD",
     productDescription: "軽量で丈夫",
-    releaseData: "2022/02/25 16:20",
+    releaseDate: "2022/02/25 16:20",
   },
   {
     id: 35,
@@ -283,7 +283,7 @@ const products = [
     productName: "商品名35",
     brandName: "ブランドE",
     productDescription: "シンプルなデザイン",
-    releaseData: "2022/03/27 09:35",
+    releaseDate: "2022/03/27 09:35",
   },
   {
     id: 36,
@@ -291,7 +291,7 @@ const products = [
     productName: "商品名36",
     brandName: "ブランドA",
     productDescription: "快適で高品質",
-    releaseData: "2022/04/23 14:00",
+    releaseDate: "2022/04/23 14:00",
   },
 ];
 
@@ -337,7 +337,7 @@ productImgPath: ${data.productImgPath}
 productName: ${data.productName}
 brandName: ${data.brandName}
 productDescription: ${data.productDescription}
-releaseData: ${data.releaseData}
+releaseDate: ${data.releaseDate}
 ---
 `;
 

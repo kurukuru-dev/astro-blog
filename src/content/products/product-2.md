@@ -4,5 +4,5 @@ productImgPath: /clothes/clothes-2.jpg
 productName: 商品名2
 brandName: ブランドB
 productDescription: スタイリッシュで快適
-releaseData: 2022/02/14 09:45
+releaseDate: 2022/02/14 09:45
 ---

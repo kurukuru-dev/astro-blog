@@ -4,5 +4,5 @@ productImgPath: /clothes/clothes-31.jpg
 productName: 商品名31
 brandName: ブランドA
 productDescription: 丈夫で長く使える
-releaseData: 2022/03/18 17:50
+releaseDate: 2022/03/18 17:50
 ---
