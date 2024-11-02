@@ -1,3 +1,4 @@
-import convertToDate from "./convertToDate";
+import getProductsByDate from "./getProductsByDate";
+import getRandomProducts from "./getRandomProducts";
 
-export { convertToDate };
+export { getProductsByDate, getRandomProducts };

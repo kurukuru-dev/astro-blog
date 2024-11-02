@@ -1,17 +1,17 @@
 ---
 import { getCollection } from "astro:content";
+import { getRandomProducts } from "src/util";
 import GlobalLayout from "src/layouts/GlobalLayout.astro";
 import Card from "src/components/Card.astro";
 import Link from "src/components/Link.astro";
 
 const products = await getCollection("products");
-
-const popularProducts = products.sort(() => Math.random() - 0.5);
+const popularProducts = getRandomProducts(products);
 ---
 
 <GlobalLayout title="人気商品ランキング">
   <div class="mt-4">
-    <h2 class="">人気商品ランキング</h2>
+    <h2 class="text-xl">人気商品ランキング</h2>
     <ul class="mt-1 grid w-full grid-cols-5 grid-rows-1 gap-x-1">
       {
         popularProducts.map(({ data }) => (

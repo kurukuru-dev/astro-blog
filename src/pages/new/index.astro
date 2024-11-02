@@ -1,21 +1,18 @@
 ---
 import { getCollection } from "astro:content";
-import { convertToDate } from "src/util";
+import { getProductsByDate } from "src/util";
 import GlobalLayout from "src/layouts/GlobalLayout.astro";
 import Card from "src/components/Card.astro";
 import Link from "src/components/Link.astro";
 
 const products = await getCollection("products");
 
-const newProducts = products.sort(
-  (a, b) =>
-    convertToDate(a.data.releaseDate) - convertToDate(b.data.releaseDate)
-);
+const newProducts = getProductsByDate(products);
 ---
 
 <GlobalLayout title="新着商品ページ">
   <div class="mt-4">
-    <h2>新着商品ページ</h2>
+    <h2 class="text-xl">新着商品ページ</h2>
     <ul class="mt-1 grid w-full grid-cols-5 grid-rows-2 gap-2">
       {
         newProducts.map(({ data }) => (

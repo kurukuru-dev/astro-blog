@@ -1,22 +1,16 @@
 ---
 import { getCollection } from "astro:content";
-import { convertToDate } from "src/util";
 import GlobalLayout from "src/layouts/GlobalLayout.astro";
 import Card from "src/components/Card.astro";
 import Link from "src/components/Link.astro";
+import { getProductsByDate, getRandomProducts } from "src/util";
 
 const products = await getCollection("products");
 
 // 新着商品を日付順に10個取得
-const newProducts = products
-  .sort(
-    (a, b) =>
-      convertToDate(a.data.releaseDate) - convertToDate(b.data.releaseDate)
-  )
-  .slice(0, 10);
-
+const newProducts = getProductsByDate(products, 10);
 // 人気商品5品をランダムに取得
-const popularProducts = products.sort(() => Math.random() - 0.5).slice(0, 5);
+const popularProducts = getRandomProducts(products, 5);
 ---
 
 <GlobalLayout title="トップページ">
