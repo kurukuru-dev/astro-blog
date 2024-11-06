@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import { getProductsByDate } from "src/util";
 import GlobalLayout from "src/layouts/GlobalLayout.astro";
 import Card from "src/components/Card.astro";
+import Input from "src/components/input.jsx";
 import Link from "src/components/Link.astro";
 
 const products = await getCollection("products");
@@ -12,6 +13,7 @@ const newProducts = getProductsByDate(products);
 
 <GlobalLayout title="新着商品ページ">
   <div class="mt-4">
+    <Input client:load />
     <h2 class="text-xl">新着商品ページ</h2>
     <ul class="mt-1 grid w-full grid-cols-5 grid-rows-2 gap-2">
       {
