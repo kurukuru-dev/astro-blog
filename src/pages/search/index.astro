@@ -1,10 +1,10 @@
 ---
 import GlobalLayout from "src/layouts/GlobalLayout.astro";
-import Input from "@components/Input.tsx";
+import SearchFilters from "@components/SearchFilters";
 ---
 
 <GlobalLayout title="検索ページ">
   <div class="mt-4 text-center">
-    <Input client:load />
+    <SearchFilters client:load />
   </div>
 </GlobalLayout>

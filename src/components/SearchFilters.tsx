@@ -18,7 +18,7 @@ interface Brand {
   brand: string;
 }
 
-function Input() {
+function SeachFilters() {
   const [inputValue, setInputValue] = useState("");
   const [selectValue, setSelectValue] = useState("");
   const [brand, setBrand] = useState<Brand[] | []>([]);
@@ -82,4 +82,4 @@ function Input() {
   );
 }
 
-export default Input;
+export default SeachFilters;
