@@ -6,5 +6,5 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [tailwind(), react()],
   site: "https://kurukuru-dev.github.io",
-  base: process.env.GITHUB_PAGES ? "/astro-ec-site/" : "/",
+  base: "/astro-ec-site",
 });
