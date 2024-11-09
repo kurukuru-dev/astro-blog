@@ -13,7 +13,7 @@ const { productId, productImgPath, productName, brandName } = Astro.props;
   <article>
     <a href={`/products/${productId}`}>
       <img
-        src={`${Astro.url.origin}/${productImgPath}`}
+        src={`${Astro.url.origin}${productImgPath}`}
         alt=""
         class="h-56 w-full"
       />
