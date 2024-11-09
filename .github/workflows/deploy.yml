@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: Set Env
         run: GITHUB_PAGES=true
-      - name: Checkout your repository using git
+      - name: echo "GITHUB_PAGES=true" >> $GITHUB_ENV
         uses: actions/checkout@v4
       - name: Install, build, and upload your site
         uses: withastro/action@v1

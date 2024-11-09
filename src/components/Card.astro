@@ -6,14 +6,12 @@ interface Props {
   brandName: string;
 }
 
-const githubRepoPath = process.env.GITHUB_PAGES ? "/astro-ec-app" : "";
-
 const { productId, productImgPath, productName, brandName } = Astro.props;
 ---
 
 <li class="rounded-sm border p-1">
   <article>
-    <a href={`${Astro.url.origin}${githubRepoPath}/products/${productId}`}>
+    <a href={`${Astro.url.origin}/products/${productId}`}>
       <img src={productImgPath} alt="" class="h-56 w-full" />
       <h3>{productName}</h3>
       <p>{brandName}</p>
