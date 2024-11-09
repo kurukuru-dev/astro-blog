@@ -18,10 +18,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Set Env
-        run: GITHUB_PAGES=true
-      - name: echo "GITHUB_PAGES=true" >> $GITHUB_ENV
+      - name: Checkout your repository
         uses: actions/checkout@v4
+      - name: set env
+        run: echo "GITHUB_PAGES=true" >> $GITHUB_ENV
       - name: Install, build, and upload your site
         uses: withastro/action@v1
         with:
