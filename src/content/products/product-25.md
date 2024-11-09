@@ -1,6 +1,6 @@
 ---
 id: 25
-productImgPath: /clothes/clothes-25.jpg
+productImgPath: clothes/clothes-25.jpg
 productName: 商品名25
 brandName: ブランドE
 productDescription: シンプルで魅力的

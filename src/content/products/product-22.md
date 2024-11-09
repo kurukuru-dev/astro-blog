@@ -1,6 +1,6 @@
 ---
 id: 22
-productImgPath: /clothes/clothes-22.jpg
+productImgPath: clothes/clothes-22.jpg
 productName: 商品名22
 brandName: ブランドB
 productDescription: 軽量で快適

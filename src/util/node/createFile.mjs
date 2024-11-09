@@ -7,7 +7,7 @@ import fs from "fs/promises";
 const products = [
   {
     id: 1,
-    productImgPath: "/clothes/clothes-1.jpg",
+    productImgPath: "clothes/clothes-1.jpg",
     productName: "商品名1",
     brandName: "ブランドA",
     productDescription: "高品質でデザインも良いです",
@@ -15,7 +15,7 @@ const products = [
   },
   {
     id: 2,
-    productImgPath: "/clothes/clothes-2.jpg",
+    productImgPath: "clothes/clothes-2.jpg",
     productName: "商品名2",
     brandName: "ブランドB",
     productDescription: "スタイリッシュで快適",
@@ -23,7 +23,7 @@ const products = [
   },
   {
     id: 3,
-    productImgPath: "/clothes/clothes-3.jpg",
+    productImgPath: "clothes/clothes-3.jpg",
     productName: "商品名3",
     brandName: "ブランドC",
     productDescription: "素材が非常に柔らかいです",
@@ -31,7 +31,7 @@ const products = [
   },
   {
     id: 4,
-    productImgPath: "/clothes/clothes-4.jpg",
+    productImgPath: "clothes/clothes-4.jpg",
     productName: "商品名4",
     brandName: "ブランドD",
     productDescription: "カジュアルで毎日に最適",
@@ -39,7 +39,7 @@ const products = [
   },
   {
     id: 5,
-    productImgPath: "/clothes/clothes-5.jpg",
+    productImgPath: "clothes/clothes-5.jpg",
     productName: "商品名5",
     brandName: "ブランドE",
     productDescription: "クールで快適な服です",
@@ -47,7 +47,7 @@ const products = [
   },
   {
     id: 6,
-    productImgPath: "/clothes/clothes-6.jpg",
+    productImgPath: "clothes/clothes-6.jpg",
     productName: "商品名6",
     brandName: "ブランドA",
     productDescription: "耐久性があり長持ちします",
@@ -55,7 +55,7 @@ const products = [
   },
   {
     id: 7,
-    productImgPath: "/clothes/clothes-7.jpg",
+    productImgPath: "clothes/clothes-7.jpg",
     productName: "商品名7",
     brandName: "ブランドB",
     productDescription: "毎日の使用に最適です",
@@ -63,7 +63,7 @@ const products = [
   },
   {
     id: 8,
-    productImgPath: "/clothes/clothes-8.jpg",
+    productImgPath: "clothes/clothes-8.jpg",
     productName: "商品名8",
     brandName: "ブランドC",
     productDescription: "着心地が素晴らしいです",
@@ -71,7 +71,7 @@ const products = [
   },
   {
     id: 9,
-    productImgPath: "/clothes/clothes-9.jpg",
+    productImgPath: "clothes/clothes-9.jpg",
     productName: "商品名9",
     brandName: "ブランドD",
     productDescription: "おしゃれなデザインです",
@@ -79,7 +79,7 @@ const products = [
   },
   {
     id: 10,
-    productImgPath: "/clothes/clothes-10.jpg",
+    productImgPath: "clothes/clothes-10.jpg",
     productName: "商品名10",
     brandName: "ブランドE",
     productDescription: "品質が良く快適です",
@@ -87,7 +87,7 @@ const products = [
   },
   {
     id: 11,
-    productImgPath: "/clothes/clothes-11.jpg",
+    productImgPath: "clothes/clothes-11.jpg",
     productName: "商品名11",
     brandName: "ブランドA",
     productDescription: "普段着にぴったり",
@@ -95,7 +95,7 @@ const products = [
   },
   {
     id: 12,
-    productImgPath: "/clothes/clothes-12.jpg",
+    productImgPath: "clothes/clothes-12.jpg",
     productName: "商品名12",
     brandName: "ブランドB",
     productDescription: "素晴らしい着心地です",
@@ -103,7 +103,7 @@ const products = [
   },
   {
     id: 13,
-    productImgPath: "/clothes/clothes-13.jpg",
+    productImgPath: "clothes/clothes-13.jpg",
     productName: "商品名13",
     brandName: "ブランドC",
     productDescription: "丈夫で長持ちします",
@@ -111,7 +111,7 @@ const products = [
   },
   {
     id: 14,
-    productImgPath: "/clothes/clothes-14.jpg",
+    productImgPath: "clothes/clothes-14.jpg",
     productName: "商品名14",
     brandName: "ブランドD",
     productDescription: "柔らかく軽い素材です",
@@ -119,7 +119,7 @@ const products = [
   },
   {
     id: 15,
-    productImgPath: "/clothes/clothes-15.jpg",
+    productImgPath: "clothes/clothes-15.jpg",
     productName: "商品名15",
     brandName: "ブランドE",
     productDescription: "動きやすい設計です",
@@ -127,7 +127,7 @@ const products = [
   },
   {
     id: 16,
-    productImgPath: "/clothes/clothes-16.jpg",
+    productImgPath: "clothes/clothes-16.jpg",
     productName: "商品名16",
     brandName: "ブランドA",
     productDescription: "ファッション性抜群",
@@ -135,7 +135,7 @@ const products = [
   },
   {
     id: 17,
-    productImgPath: "/clothes/clothes-17.jpg",
+    productImgPath: "clothes/clothes-17.jpg",
     productName: "商品名17",
     brandName: "ブランドB",
     productDescription: "シンプルで便利",
@@ -143,7 +143,7 @@ const products = [
   },
   {
     id: 18,
-    productImgPath: "/clothes/clothes-18.jpg",
+    productImgPath: "clothes/clothes-18.jpg",
     productName: "商品名18",
     brandName: "ブランドC",
     productDescription: "とてもおしゃれです",
@@ -151,7 +151,7 @@ const products = [
   },
   {
     id: 19,
-    productImgPath: "/clothes/clothes-19.jpg",
+    productImgPath: "clothes/clothes-19.jpg",
     productName: "商品名19",
     brandName: "ブランドD",
     productDescription: "軽くて丈夫なデザイン",
@@ -159,7 +159,7 @@ const products = [
   },
   {
     id: 20,
-    productImgPath: "/clothes/clothes-20.jpg",
+    productImgPath: "clothes/clothes-20.jpg",
     productName: "商品名20",
     brandName: "ブランドE",
     productDescription: "シンプルで高品質",
@@ -167,7 +167,7 @@ const products = [
   },
   {
     id: 21,
-    productImgPath: "/clothes/clothes-21.jpg",
+    productImgPath: "clothes/clothes-21.jpg",
     productName: "商品名21",
     brandName: "ブランドA",
     productDescription: "普段使いに最適",
@@ -175,7 +175,7 @@ const products = [
   },
   {
     id: 22,
-    productImgPath: "/clothes/clothes-22.jpg",
+    productImgPath: "clothes/clothes-22.jpg",
     productName: "商品名22",
     brandName: "ブランドB",
     productDescription: "軽量で快適",
@@ -183,7 +183,7 @@ const products = [
   },
   {
     id: 23,
-    productImgPath: "/clothes/clothes-23.jpg",
+    productImgPath: "clothes/clothes-23.jpg",
     productName: "商品名23",
     brandName: "ブランドC",
     productDescription: "日常使いにぴったり",
@@ -191,7 +191,7 @@ const products = [
   },
   {
     id: 24,
-    productImgPath: "/clothes/clothes-24.jpg",
+    productImgPath: "clothes/clothes-24.jpg",
     productName: "商品名24",
     brandName: "ブランドD",
     productDescription: "毎日に最適な選択",
@@ -199,7 +199,7 @@ const products = [
   },
   {
     id: 25,
-    productImgPath: "/clothes/clothes-25.jpg",
+    productImgPath: "clothes/clothes-25.jpg",
     productName: "商品名25",
     brandName: "ブランドE",
     productDescription: "シンプルで魅力的",
@@ -207,7 +207,7 @@ const products = [
   },
   {
     id: 26,
-    productImgPath: "/clothes/clothes-26.jpg",
+    productImgPath: "clothes/clothes-26.jpg",
     productName: "商品名26",
     brandName: "ブランドA",
     productDescription: "質感が素晴らしい",
@@ -215,7 +215,7 @@ const products = [
   },
   {
     id: 27,
-    productImgPath: "/clothes/clothes-27.jpg",
+    productImgPath: "clothes/clothes-27.jpg",
     productName: "商品名27",
     brandName: "ブランドB",
     productDescription: "軽くて持ち運びが楽",
@@ -223,7 +223,7 @@ const products = [
   },
   {
     id: 28,
-    productImgPath: "/clothes/clothes-28.jpg",
+    productImgPath: "clothes/clothes-28.jpg",
     productName: "商品名28",
     brandName: "ブランドC",
     productDescription: "肌触りが良い",
@@ -231,7 +231,7 @@ const products = [
   },
   {
     id: 29,
-    productImgPath: "/clothes/clothes-29.jpg",
+    productImgPath: "clothes/clothes-29.jpg",
     productName: "商品名29",
     brandName: "ブランドD",
     productDescription: "トレンドに合った服",
@@ -239,7 +239,7 @@ const products = [
   },
   {
     id: 30,
-    productImgPath: "/clothes/clothes-30.jpg",
+    productImgPath: "clothes/clothes-30.jpg",
     productName: "商品名30",
     brandName: "ブランドE",
     productDescription: "着心地が良い",
@@ -247,7 +247,7 @@ const products = [
   },
   {
     id: 31,
-    productImgPath: "/clothes/clothes-31.jpg",
+    productImgPath: "clothes/clothes-31.jpg",
     productName: "商品名31",
     brandName: "ブランドA",
     productDescription: "丈夫で長く使える",
@@ -255,7 +255,7 @@ const products = [
   },
   {
     id: 32,
-    productImgPath: "/clothes/clothes-32.jpg",
+    productImgPath: "clothes/clothes-32.jpg",
     productName: "商品名32",
     brandName: "ブランドB",
     productDescription: "シンプルで便利な服",
@@ -263,7 +263,7 @@ const products = [
   },
   {
     id: 33,
-    productImgPath: "/clothes/clothes-33.jpg",
+    productImgPath: "clothes/clothes-33.jpg",
     productName: "商品名33",
     brandName: "ブランドC",
     productDescription: "柔らかくて快適",
@@ -271,7 +271,7 @@ const products = [
   },
   {
     id: 34,
-    productImgPath: "/clothes/clothes-34.jpg",
+    productImgPath: "clothes/clothes-34.jpg",
     productName: "商品名34",
     brandName: "ブランドD",
     productDescription: "軽量で丈夫",
@@ -279,7 +279,7 @@ const products = [
   },
   {
     id: 35,
-    productImgPath: "/clothes/clothes-35.jpg",
+    productImgPath: "clothes/clothes-35.jpg",
     productName: "商品名35",
     brandName: "ブランドE",
     productDescription: "シンプルなデザイン",
@@ -287,7 +287,7 @@ const products = [
   },
   {
     id: 36,
-    productImgPath: "/clothes/clothes-36.jpg",
+    productImgPath: "clothes/clothes-36.jpg",
     productName: "商品名36",
     brandName: "ブランドA",
     productDescription: "快適で高品質",
@@ -346,7 +346,7 @@ releaseDate: ${data.releaseDate}
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const productsPath = join(__dirname, "../content/products");
+const productsPath = join(__dirname, "../../content/products");
 
 (async () => {
   await deleteDir(productsPath);

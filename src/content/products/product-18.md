@@ -1,6 +1,6 @@
 ---
 id: 18
-productImgPath: /clothes/clothes-18.jpg
+productImgPath: clothes/clothes-18.jpg
 productName: 商品名18
 brandName: ブランドC
 productDescription: とてもおしゃれです

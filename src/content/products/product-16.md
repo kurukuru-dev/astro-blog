@@ -1,6 +1,6 @@
 ---
 id: 16
-productImgPath: /clothes/clothes-16.jpg
+productImgPath: clothes/clothes-16.jpg
 productName: 商品名16
 brandName: ブランドA
 productDescription: ファッション性抜群

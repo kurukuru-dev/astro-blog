@@ -11,9 +11,11 @@ const { productId, productImgPath, productName, brandName } = Astro.props;
 
 <li class="rounded-sm border p-1">
   <article>
-    <a href={`/products/${productId}`}>
+    <a
+      href={`${Astro.url.origin}${import.meta.env.BASE_URL}products/${productId}`}
+    >
       <img
-        src={`${Astro.url.origin}${productImgPath}`}
+        src={`${Astro.url.origin}${import.meta.env.BASE_URL}${productImgPath}`}
         alt=""
         class="h-56 w-full"
       />

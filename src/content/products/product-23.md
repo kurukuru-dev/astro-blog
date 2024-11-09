@@ -1,6 +1,6 @@
 ---
 id: 23
-productImgPath: /clothes/clothes-23.jpg
+productImgPath: clothes/clothes-23.jpg
 productName: 商品名23
 brandName: ブランドC
 productDescription: 日常使いにぴったり

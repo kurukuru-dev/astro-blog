@@ -1,6 +1,6 @@
 ---
 id: 24
-productImgPath: /clothes/clothes-24.jpg
+productImgPath: clothes/clothes-24.jpg
 productName: 商品名24
 brandName: ブランドD
 productDescription: 毎日に最適な選択

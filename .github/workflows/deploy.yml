@@ -20,8 +20,6 @@ jobs:
     steps:
       - name: Checkout your repository
         uses: actions/checkout@v4
-      - name: set env
-        run: GITHUB_PAGES=true
       - name: Install, build, and upload your site
         uses: withastro/action@v1
         with:

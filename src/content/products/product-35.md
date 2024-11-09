@@ -1,6 +1,6 @@
 ---
 id: 35
-productImgPath: /clothes/clothes-35.jpg
+productImgPath: clothes/clothes-35.jpg
 productName: 商品名35
 brandName: ブランドE
 productDescription: シンプルなデザイン

@@ -1,6 +1,6 @@
 ---
 id: 15
-productImgPath: /clothes/clothes-15.jpg
+productImgPath: clothes/clothes-15.jpg
 productName: 商品名15
 brandName: ブランドE
 productDescription: 動きやすい設計です
