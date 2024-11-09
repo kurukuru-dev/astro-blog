@@ -8,6 +8,5 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react()],
-  site: "https://kurukuru-dev.github.io",
-  base: "/astro-ec-app/",
+  site: "https://kurukuru-dev.github.io/astro-ec-app",
 });
