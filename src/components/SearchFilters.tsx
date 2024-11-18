@@ -63,7 +63,7 @@ function SeachFilters() {
         <select
           name="brand"
           value={selectValue}
-          id=""
+          id="select"
           onChange={handleSelectChange}
         >
           {BRANDNAME_ARR.map((item) => (
@@ -75,7 +75,9 @@ function SeachFilters() {
       </div>
       <ul>
         {brand.map((item) => (
-          <li key={item.id}>{item.brand}</li>
+          <li key={item.id} id={`item-${item.id}`}>
+            {item.brand}
+          </li>
         ))}
       </ul>
     </>

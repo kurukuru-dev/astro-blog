@@ -52,11 +52,11 @@ const isoDate = releaseDate.replace(/\//g, "-").replace(" ", "T");
       class="mx-auto h-[500px] w-full"
     />
     <div class="mt-4">
-      <h1>商品名: {productName}</h1>
+      <h1 id="productName">商品名: {productName}</h1>
       <p>商品ID: {id}</p>
-      <h2>ブランド名: {brandName}</h2>
+      <h2 id="brandName">ブランド名: {brandName}</h2>
       <p>商品説明: {productDescription}</p>
-      <time datetime={isoDate} class="block">発売日: {releaseDate}</time>
+      <time datetime={isoDate} class="block" id="releaseDate">発売日: {releaseDate}</time>
       <Link path="" className="mt-4 text-right">トップへ戻る</Link>
     </div>
   </div>
