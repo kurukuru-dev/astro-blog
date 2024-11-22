@@ -50,12 +50,12 @@ function SeachFilters() {
   return (
     <>
       <div className="flex items-center justify-center gap-y-2">
-        <label className="text-sm" htmlFor="search">
+        <label className="text-sm" htmlFor="searchInput">
           ブランド名
         </label>
         <input
           type="text"
-          id="search"
+          id="searchInput"
           value={inputValue}
           onChange={handleInputChange}
           className="ml-2 h-8 w-96 rounded-md border border-gray-300 px-2"
@@ -75,7 +75,7 @@ function SeachFilters() {
       </div>
       <ul>
         {brand.map((item) => (
-          <li key={item.id} id={`item-${item.id}`}>
+          <li key={item.id} id={"brand"}>
             {item.brand}
           </li>
         ))}
